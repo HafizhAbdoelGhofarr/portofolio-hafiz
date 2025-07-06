@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hafiz AG - Web Developer Portfolio</title>
+  <meta name="description" content="Hafiz AG's personal portfolio website. Web developer, IT enthusiast, and project experience from Lampung, Indonesia.">
+  <meta name="keywords" content="Hafiz AG, portfolio, web developer, Lampung, IT, projects, programmer, Indonesia, Hafizh Abdoel Ghofar">
+  <meta name="author" content="Hafizh Abdoel Ghofar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.com/hafiz.html" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" />
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>Hafizh Abdoel Ghofar</h1>
+    <p>College student</p>
+    <!-- Social media links -->
+    <div class="sosmed">
+      <a href="https://www.instagram.com/hfizh626" target="_blank"><img
+          src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="24"
+          style="vertical-align:middle;" /></a>
+      <a href="mailto:hafizabdulgoffar@gmail.com" target="_blank"><img
+          src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" width="24"
+          style="vertical-align:middle;" /></a>
+      <a href="https://github.com/" target="_blank"><img
+          src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="24"
+          style="vertical-align:middle;" /></a>
+    </div>
+  </header>
+
+  <!-- ================ MAIN CONTENT ================ -->
+  <main class="container">
+    <!-- About Me Section -->
+    <section class="summary tentang-flex">
+      <div class="tentang-teks">
+        <h2>About Me</h2>
+        <p>I am a 3rd semester student at the University of Lampung. I have a strong interest in technology, especially web programming and application development. I am also active in various campus activities and IT communities. My goal is to become a professional web developer who can provide useful digital solutions.</p>
+        <a href="tentang.html" class="btn">Read More</a>
+      </div>
+      <img src="WhatsApp Image 2025-07-06 at 22.59.29_ae785e71.jpg" class="profile-img besar" alt="Hafiz's Photo">
+    </section>
+
+    <!-- Experience Section -->
+    <section class="summary fade-in">
+      <h2>Experience</h2>
+      <ul class="pengalaman-list">
+        <li>
+          <strong>Research and Development Staff, Himatro UNILA</strong><br>
+          <span style="color:#666;font-size:0.97em;">2025 - Present</span><br>
+          Assisting in managing the organization's website and information systems, as well as providing IT training for new members.
+        </li>
+        <li>
+          <strong>Freelance Web Developer</strong><br>
+          <span style="color:#666;font-size:0.97em;">2025 - Present</span><br>
+          Creating landing pages, portfolio websites, and simple online stores for local clients.
+        </li>
+        <li>
+          <strong>Vice Chairman, EEA 2025</strong><br>
+          <span style="color:#666;font-size:0.97em;">2025</span><br>
+          Responsible for documentation, publication, and managing online participant registration.
+        </li>
+      </ul>
+      <a href="pengalaman.html" class="btn" style="margin-top:14px;">Read More</a>
+      </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="summary skills fade-in">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <span>HTML</span>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width:90%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>CSS</span>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width:50%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>JavaScript</span>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width:50%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>Python</span>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width:20%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>UI Design</span>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width:60%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section (Slider) -->
+    <section class="summary portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-slider-container" style="position:relative;overflow:hidden;width:700px;max-width:100vw;margin:auto;min-height:340px;background:transparent;">
+        <button type="button" class="btn-portfolio-nav" onclick="slidePortfolio(-1)" style="z-index:2;position:absolute;left:0;top:50%;transform:translateY(-50%);">&#8592;</button>
+        <div class="portfolio-list" id="portfolio-list" style="display:flex;transition:transform 0.5s cubic-bezier(.7,.2,.3,1);will-change:transform;height:100%;">
+          <!-- Portfolio items will be injected by JS -->
+        </div>
+        <button type="button" class="btn-portfolio-nav" onclick="slidePortfolio(1)" style="z-index:2;position:absolute;right:0;top:50%;transform:translateY(-50%);">&#8594;</button>
+      </div>
+      <div class="portfolio-slider-dots" id="portfolio-dots" style="text-align:center;margin-top:12px;"></div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class="summary">
+      <h2>Hobbies</h2>
+      <p>Coding, basketball, and chess.</p>
+      <a href="hobi.html" class="btn">Read More</a>
+    </section>
+
+    <!-- Education Section -->
+    <section class="summary">
+      <h2>Education</h2>
+      <ul>
+        <li>University of Lampung - BSc in Informatics Engineering (2024 - present)</li>
+        <li>SMAN 1 Bukit Kemuning (2021 - 2024)</li>
+      </ul>
+      <a href="pendidikan.html" class="btn">Read More</a>
+    </section>
+
+
+    <!-- Modern Contact Form Section -->
+    <section class="summary fade-in" id="contact-form-section">
+      <h2>Contact Me</h2>
+      <form class="contact-form" autocomplete="off"
+        onsubmit="event.preventDefault();alert('Message sent successfully! (simulation)');this.reset();">
+        <div class="form-row">
+          <input type="text" name="nama" placeholder="Name" required>
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-row">
+          <textarea name="pesan" rows="3" placeholder="Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Download CV & Testimonials (Slider) Section -->
+    <section class="summary fade-in"
+      style="display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between;">
+      <div>
+        <h2>Download CV</h2>
+        <a href="CV_HafizAG.pdf" class="btn" download>Download CV</a>
+      </div>
+      <div style="max-width:340px;flex:1;">
+        <h2>Testimonials</h2>
+        <div class="testimoni-slider">
+          <blockquote id="testimoni-text"
+            style="font-style:italic;color:#444;background:#f7f9fa;border-left:4px solid #2c5364;padding:12px 18px;border-radius:10px;box-shadow:0 2px 8px rgba(44,83,100,0.07);margin:0;min-height:80px;transition:opacity 0.3s;">
+            "Hafiz is a friend who always helps and quickly learns new things in IT!"<br>
+            <span style="font-size:0.95em;color:#888;">- College Friend</span>
+          </blockquote>
+          <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px;">
+            <button type="button" class="btn-testimoni-nav" onclick="slideTestimoni(-1)">&#8592;</button>
+            <button type="button" class="btn-testimoni-nav" onclick="slideTestimoni(1)">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Script Testimoni Slider & Portfolio Slider -->
+    <script>
+      // Testimonial slider logic
+      const testimoniData = [
+        {
+          text: '"Hafiz is a friend who always helps and quickly learns new things in IT!"',
+          author: '- College Friend'
+        },
+        {
+          text: '"Very thorough and always completes tasks on time. Hafiz is also fun to discuss with!"',
+          author: '- Project Colleague'
+        },
+        {
+          text: '"Creative, friendly, and always eager to learn new things. Keep up the great work, Hafiz!"',
+          author: '- Campus Senior'
+        }
+      ];
+      let testiIdx = 0;
+      function slideTestimoni(dir) {
+        testiIdx = (testiIdx + dir + testimoniData.length) % testimoniData.length;
+        const el = document.getElementById('testimoni-text');
+        el.style.opacity = 0;
+        setTimeout(() => {
+          el.innerHTML = `${testimoniData[testiIdx].text}<br><span style=\"font-size:0.95em;color:#888;\">${testimoniData[testiIdx].author}</span>`;
+          el.style.opacity = 1;
+        }, 200);
+      }
+
+      // Portfolio slider logic (geser beneran, tanpa kedipan)
+      // Portfolio slider logic (render 2 item saja, tanpa clone, tanpa putih)
+      const portfolioData = [
+        {
+          img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80',
+          title: 'Website Toko Online',
+          desc: 'Membuat website toko online sederhana menggunakan HTML, CSS, dan JavaScript.',
+          link: 'hafiz.html',
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80',
+          title: 'Aplikasi To-Do List',
+          desc: 'Aplikasi pencatat tugas harian berbasis web, mudah digunakan dan responsif.',
+          link: 'hafiz.html',
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
+          title: 'Landing Page Event',
+          desc: 'Landing page untuk promosi event kampus dengan desain modern dan interaktif.',
+          link: 'hafiz.html',
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80',
+          title: 'Aplikasi Jadwal Kuliah',
+          desc: 'Aplikasi web sederhana untuk mengatur jadwal kuliah dan pengingat tugas.',
+          link: 'hafiz.html',
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1465101053361-7630cab8b8b0?auto=format&fit=crop&w=400&q=80',
+          title: 'Company Profile',
+          desc: 'Website company profile modern untuk UMKM dengan fitur galeri dan kontak.',
+          link: 'hafiz.html',
+        },
+      ];
+      let portIdx = 0;
+      function renderPortfolioSlider() {
+        const el = document.getElementById('portfolio-list');
+        el.innerHTML = '';
+        for (let i = 0; i < 2; i++) {
+          const idx = (portIdx + i) % portfolioData.length;
+          const item = portfolioData[idx];
+          const div = document.createElement('div');
+          div.className = 'portfolio-item';
+          div.style.width = '340px';
+          div.style.flex = '0 0 340px';
+          div.style.boxSizing = 'border-box';
+          div.style.margin = '0 10px';
+          div.style.background = 'var(--card-bg, #fff)';
+          div.style.borderRadius = '16px';
+          div.style.boxShadow = '0 2px 12px rgba(44,83,100,0.08)';
+          div.innerHTML = `
+            <img src="${item.img}" alt="${item.title}" class="portfolio-img" style="width:100%;height:180px;object-fit:cover;border-radius:12px 12px 0 0;">
+            <h3>${item.title}</h3>
+            <p>${item.desc}</p>
+            <a href="${item.link}" class="btn" target="_blank">Lihat Demo</a>
+          `;
+          el.appendChild(div);
+        }
+      }
+      function updatePortfolioSlider() {
+        renderPortfolioSlider();
+        // Update dots
+        const dotsEl = document.getElementById('portfolio-dots');
+        let dots = '';
+        for (let i = 0; i < portfolioData.length; i++) {
+          const active = (i === portIdx || i === (portIdx+1)%portfolioData.length) ? 'active' : '';
+          dots += `<button class="portfolio-dot ${active}" onclick="gotoPortfolio(${i})" aria-label="Slide ${i+1}"></button>`;
+        }
+        dotsEl.innerHTML = dots;
+      }
+      function slidePortfolio(dir) {
+        portIdx = (portIdx + dir + portfolioData.length) % portfolioData.length;
+        updatePortfolioSlider();
+      }
+      function gotoPortfolio(idx) {
+        portIdx = idx;
+        updatePortfolioSlider();
+      }
+      window.addEventListener('DOMContentLoaded', () => {
+        updatePortfolioSlider();
+      });
+    </script>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>&copy; 2025 Hafiz AG</p>
+  </footer>
+</body>
+
+</html>
